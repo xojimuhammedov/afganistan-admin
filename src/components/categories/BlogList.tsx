@@ -32,7 +32,7 @@ const BlogList = () => {
 
   const handleDeleteProduct = (id: string) => {
     axios
-      .delete(`${apiUrl}/tour/${id}`, header)
+      .delete(`${apiUrl}/blog-destination/${id}`, header)
       .then((res) => {
         if (res.data.success) {
           const remainingBlogs = blogs.filter((item) => item.id !== id);
@@ -58,7 +58,7 @@ const BlogList = () => {
 
   useEffect(() => {
     axios
-      .get(`${apiUrl}/tour`, header)
+      .get(`${apiUrl}/blog-destination`, header)
       .then((res) => {
         setBlogs(res.data.data);
         setotalPages(res.data.totalPages);

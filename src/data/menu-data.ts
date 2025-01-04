@@ -31,7 +31,7 @@ export const menuData: MenuItem[] = [
   },
   {
     id: 7,
-    text: "Travel4you tourlar",
+    text: "Afganistan tourlar",
     icon: BlogIcon,
     submenu: [
       {

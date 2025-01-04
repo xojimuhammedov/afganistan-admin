@@ -51,7 +51,7 @@ const CreateServiceMain = () => {
     formData.append("description", dataOne);
 
     axios
-      .post(`${apiUrl}/tour/`, formData, {
+      .post(`${apiUrl}/blog-destination/`, formData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
           "Content-Type": "multipart/form-data",
