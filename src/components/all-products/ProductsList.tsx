@@ -73,7 +73,7 @@ const ProductsList = () => {
 
   useEffect(() => {
     axios
-      .get(`${apiUrl}/destination`, header)
+      .get(`${apiUrl}/tour-destination`, header)
       .then((res) => {
         setProducts(res.data.data);
         setotalPages(res.data.totalPages);
