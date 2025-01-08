@@ -34,7 +34,7 @@ const ProductsList = () => {
   const handleDeleteProduct = (id: string) => {
     if (user?.username) {
       axios
-        .delete(`${apiUrl}/destination/${id}`, header)
+        .delete(`${apiUrl}/tour-destination/${id}`, header)
         .then((res) => {
           if (res.data.success) {
             const remainingProduct = products.filter((item) => item.id !== id);
